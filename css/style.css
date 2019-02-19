@@ -1,0 +1,2094 @@
+/*---GLOBAL---*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #252525;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ----- Fonte ----- */
+
+h1,
+h2 {
+    font-family: 'Mate SC', serif;
+    color: #fff;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Mate', serif;
+    color: #fff;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.sub-h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0px 20px 0px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sub-h2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0px 20px 0px;
+}
+
+.sub-section {
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+/* ----- HEADER ----- */
+
+#bookingknap a {
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    background: #7E1515;
+    top: 260px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    font-family: 'Mate', serif;
+    text-decoration: none;
+    border-bottom: 5px solid #b11f25;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    z-index: 1;
+}
+
+.header-logo {
+    top: 25px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+}
+
+.header-booking {
+    position: absolute;
+    z-index: 3;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #b11f25;
+}
+
+.header-tlf {
+    position: absolute;
+    z-index: 3;
+    margin-top: 27px;
+    margin-left: 20px;
+    width: 24px;
+    height: auto;
+}
+
+/* ----- MENU ----- */
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: #252525;
+}
+
+.nav {
+    text-align: right;
+    height: 50px;
+    line-height: 30px;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #7E1515;
+    margin: 20px 15px 15px 15px;
+
+
+}
+
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #2D2D2D;
+    height: 500px;
+    font-weight: bolder;
+    font-family: 'Mate SC', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 18px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #333;
+    padding: 20px;
+    color: #7E1515;
+    border-bottom: solid #7E1515 1px;
+    margin-right: 60px;
+    margin-left: 60px;
+
+}
+
+.menu a:hover {
+    color: #e51721;
+
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 21px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.logo {
+    width: 60%;
+    margin-top: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: underline;
+}
+
+.fb {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* ----- TESTIMONIALS ----- */
+
+#testimonial-tekstur {
+    height: 350px;
+    background-size: cover;
+    background-image: url(../images/old-books.jpg);
+    background-position: center;
+}
+
+.gallery-cell {
+    width: 100%;
+}
+
+.testimonial {
+    text-align: center;
+    margin: 30px auto 50px auto;
+    padding: 0 18px;
+}
+
+.testimonial-h2 {
+    display: block;
+    font-size: 22px;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'Mate', serif;
+
+}
+
+.testimonial-quote {
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #b11f25;
+}
+
+.flickity-page-dots {
+    top: 200px;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: #b11f25;
+}
+
+
+#tripadvisor {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: -20px;
+    padding-top: 10px;
+}
+
+.stars {
+    padding-top: 30px;
+    color: rgb(56, 163, 77);
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+
+}
+
+/* ----- TESTIMONIALS SLUT ----- */
+
+
+/* ----- FOOTER SLUT ----- */
+
+/* ----- FORSIDE ----- */
+
+/* ----- LANDING IMG ----- */
+
+#landing {
+    height: 60vh;
+    background-size: cover;
+    background-image: url(../images/landingimg.jpg);
+    background-position: top;
+    opacity: 0.35;
+}
+
+.landingbox h1 {
+    top: 140px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.landingbox h2 {
+    top: 185px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+}
+
+/* ----- MARMOR BG ----- */
+
+.marmorbox {
+    background-size: cover;
+    background-image: url(../images/marmor.jpg);
+    background-position: top;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.marmorbox h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.marmor {
+    width: 100%;
+    height: 600px;
+    z-index: -2;
+    opacity: 0.1;
+    position: absolute;
+}
+
+.marmorgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.marmorgrid img {
+    width: auto;
+    height: 30px;
+}
+
+.marmorgrid h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ----- RØD TEKSTUR BG MED IKONER ----- */
+
+.roedbox {
+    background-image: url(../images/pattern-bg.jpg);
+    background-repeat: repeat;
+    height: 950px;
+}
+
+.roedbox h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.roedbox h3 {
+    text-align: center;
+}
+
+.content-for-alle {
+    text-align: center;
+}
+
+.ikon-forside {
+    margin-top: 40px;
+    height: 70px
+}
+
+.content-for-alle h3 {
+    margin-top: 10px;
+}
+
+.content-for-alle p {
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* ----- MARMOR BG MED PRISER PÅ FORSIDE ----- */
+
+.lilleh3 {
+    font-size: 15px;
+}
+
+.pris-box {
+    margin-top: 50px;
+    min-height: 90px;
+    background-color: rgba(126, 21, 21, 0.5);
+    width: 50%;
+    margin-left: 25%;
+}
+
+.pris {
+    font-size: 35px;
+    padding-top: 12px;
+}
+
+.pris-dage {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* ----- SPIL PÅ FORSIDE ----- */
+
+
+
+/* ----- FORSIDE SLUT ----- */
+
+/*------ TEAMBUILDINGSIDE \/ ------ */
+
+/* --- MORTEN HEADER TEAMBUILDING --- */
+
+.teambuilding-header {
+    height: 30vh;
+    background-size: cover;
+    background-image: url(../images/bog-paa-bord.jpg);
+    background-position: center;
+}
+
+/*---- Øverste to info-bokse på siden: FORDELE OG PRAKTISK INFO ---- */
+
+#teambuilding-tekstur {
+    background-size: cover;
+    background-image: url(../images/marmor.jpg);
+    background-position: center;
+}
+
+.teambuilding-h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+.wrapper-bokse h3 {
+    padding: 3%;
+    text-align: center;
+}
+
+.wrapper-bokse {
+    text-align: center;
+}
+
+#fordele {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #7E1515;
+    padding: 3%;
+    color: #fff;
+    list-style-position: inside;
+    text-align: left;
+    margin-bottom: 20px;
+    height: 160px;
+}
+
+#praktisk-info {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #7E1515;
+    padding: 3%;
+    color: #fff;
+    list-style-position: inside;
+    text-align: left;
+    margin-bottom: 20px;
+    height: 160px;
+}
+
+/* KODE FOR DE TO INFOBOKSE SLUTTER HER ^ */
+
+/* BOOK HER-KNAP PÅ TEAMBUILDING SIDEN */
+
+.bookingknap-teambuilding p {
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 50px;
+    background: #7E1515;
+    padding: 0 70px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 8px solid #b11f25;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 10%;
+}
+
+.bookingknap-teambuilding a {
+    width: 350px;
+    margin-top: 25%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bookingknap-teambuilding p:hover {
+    background-color: #b11f25;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* IKONER der illustrerer max antal og tid */
+
+#ikoner {
+    text-align: center;
+    padding: 8%
+}
+
+.ikon-bar li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    color: #fff;
+
+}
+
+.icon-pics {
+    width: 25px;
+    text-align: center;
+    vertical-align: -29%;
+    padding-left: 4px;
+
+}
+
+/*EL-KHOLY muligheden - tekstafsnit */
+
+.fulde-udbytte {
+    height: 820px;
+    background-size: cover;
+    background-image: url(../images/teambuliding-baggrund.jpg);
+    background-position: center;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.fulde-udbytte h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#teambuilding-tekstur h3 {
+    text-align: center;
+}
+
+#consult-tekst {
+    margin: 2%;
+}
+
+
+/* ---- HERUNDER kontakt-knap til TEAMBUILDING SIDEN ---- */
+
+#kontakt-knap p {
+    margin-top: 30px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 50px;
+    background: #7E1515;
+    padding: 0px 70px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 8px solid #b11f25;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+}
+
+#kontakt-knap a {
+    width: 350px;
+    margin-top: 25%;
+    text-decoration: none;
+    color: #fff;
+}
+
+#kontakt-knap p:hover {
+    background-color: #b11f25;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* -----------HER SLUTTER KODE FOR TEAMBUILDING-SIDEN--------- */
+
+/*----DE 3 RUM/VORES RUM SIDEN STARTER-----*/
+
+#marmor-baggrund-rum {
+    height: 1100px;
+    background-image: url(../images/marmor.jpg);
+}
+
+#voresrum-header {
+    display: flex;
+    height: 30vh;
+    background-size: cover;
+    background-image: url(../images/voresrum-header.jpg);
+    background-position: center;
+}
+
+.voresrum-h1 {
+    text-align: center;
+    padding: 2%;
+}
+
+.voresrum p {
+    padding: 1% 10% 4% 10%;
+}
+
+.tekst-i-modal {
+    padding: 4% 2% 4% 2%;
+    text-align: justify;
+    word-break: keep-all;
+    margin-bottom: 10px;
+}
+
+.detrerum h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.detrerum img {
+    /*ikonerne*/
+    width: 100%;
+}
+
+#oberstimg {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url(../images/oberst.jpg);
+    background-position: center;
+
+}
+
+#enigmaimg {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url(../images/enigma.png);
+    background-position: center;
+}
+
+#alkymistimg {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url(../images/alkymisten.jpg);
+    background-position: center;
+}
+
+.alkymisten {
+    margin-top: 30px;
+}
+
+.enigma {
+    margin-top: 30px;
+}
+
+.oberst {
+    margin-top: 30px;
+}
+
+.content-billede {
+    width: 100%;
+}
+
+/* med inspiration fra https://www.w3schools.com/howto/howto_css_modals.asp */
+
+/* The Modal (background) */
+
+.modal,
+.modal1,
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 150px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content,
+.modal-indhold1,
+.modal-indhold {
+    background: #7e1515;
+    margin: auto;
+    padding: 30px;
+    width: 90%;
+    margin-top: -15%;
+}
+
+.booknu-rum {
+    width: 50%;
+    background: none;
+    border: solid 1.5px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 6px;
+    padding: 3px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+.booknu-rum a {
+    text-decoration: none;
+    color: white;
+}
+
+.booknu-rum:hover {
+    background: brown;
+}
+
+
+
+
+
+
+
+
+
+/* The Close Button */
+
+
+
+
+.close,
+.luk1,
+.luk {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+.luk1:hover,
+.luk1:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.luk:hover,
+.luk:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*De tre billeder*/
+
+.alkymisten {
+    position: relative;
+}
+
+.enigma {
+    position: relative;
+}
+
+.oberst {
+    position: relative;
+}
+
+/*styling af knapper i vores rum*/
+
+#myBtn,
+#minknap,
+#minknap1 {
+    background: #7E1515;
+    border: none;
+    padding: 1% 5%;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Merriweather Sans', sans-serif;
+    cursor: pointer;
+
+}
+
+.tekstonimg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+.tekstonimg1 {
+    /*ikonerne*/
+    width: 20%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*-----VORES RUM SIDEN SLUTTER-----*/
+
+/*-----SPILLET-----*/
+
+.spil-knap {
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    background: #7E1515;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Mate', serif;
+    border-bottom: 5px solid #b11f25;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    z-index: 1;
+    margin-top: 30%;
+    text-decoration: none;
+    color: white;
+}
+
+.spil-knap:hover {
+    background-color: #b11f25;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.startspilimg {
+    width: 90%;
+    margin-top: 30px;
+}
+
+/*SPILLET SLUTTER----*/
+
+
+/*---- SIDEN STARTER-----*/
+
+/*******************************
+Modificeret snippet fra CodePen: https://codepen.io/origamid/pen/oeYQpK
+*******************************/
+
+#faq-header {
+    height: 30vh;
+    background-size: cover;
+    background-image: url(../images/atlas.jpg);
+    background-position: center;
+}
+
+#faq-tekstur {
+    background-size: cover;
+    background-image: url(../images/marmor.jpg);
+    background-position: center;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.lista-item {
+    background: #7E1515;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.faq-titulo {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Mate', serif;
+
+}
+
+
+.faq-titulo::after {
+    content: '+';
+    float: right;
+    transition: transform .3s ease;
+}
+
+.faq-conteudo {
+    padding-top: 20px;
+    font-size: 14px;
+    display: none;
+}
+
+.trigger-input {
+    display: none;
+}
+
+.trigger-input:checked + .trigger-container .faq-conteudo {
+    display: block;
+}
+
+.trigger-input:checked + .trigger-container .faq-titulo::after {
+    transform: rotate(45deg) scale(1.08);
+}
+
+
+
+/*-----FAQ SIDEN SLUTTER-----*/
+
+
+/* -----------> KONTAKT-SIDEN START  */
+
+
+#kontakt-header {
+    height: 30vh;
+    background-size: cover;
+    background-image: url(../images/old-phone.jpg);
+    background-position: center;
+}
+
+.kontakt-siden {
+    padding: 0% 10% 0% 10%;
+}
+
+.kontakt-overskrift {
+
+    margin: 5% 0% 5% 0%;
+    text-align: center;
+}
+
+#kontakt-tekstur {
+    background-size: cover;
+    background-image: url(../images/marmor.jpg);
+    background-position: center;
+    text-align: center;
+    height: 950px;
+}
+
+/* KONTAKTFORMULAR LAVET MED INSPIRATION FRA: https://codepen.io/GabGi/pen/RVXxqo */
+
+.f-input::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.f-input {
+    background-color: #7E1515;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    font-size: 18px;
+    border-radius: 4px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.f-input:focus {
+    border: 2px solid #3a3939;
+}
+
+textarea {
+    height: 250px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.send-knap {
+    max-width: 450px;
+    width: 100%;
+    background: #7E1515;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.send-knap:hover {
+    background: #000;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* HER SLUTTER KONTAKT-SIDEN ------- */
+
+/* ----- PRISER OG BOOKING START ----- */
+
+#booking-baggrund {
+    height: 30vh;
+    background-size: cover;
+    background-image: url(../images/haandjern.jpg);
+    background-position: center;
+}
+
+/* Dropdown knap lavet med inspiration fra https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+.dropbtn i {
+    position: absolute;
+    margin-left: 25px;
+}
+
+.dropbtn {
+    width: 250px;
+    background-color: #ddd;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 0px;
+    width: 200px;
+    color: #7E1515;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #7E1515;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #7E1515;
+}
+
+.dropdown:hover {
+    color: #ddd;
+}
+
+.maaned ul {
+    list-style-type: none;
+}
+
+.dage ul {
+    list-style-type: none;
+}
+
+.dato ul {
+    list-style-type: none;
+}
+
+/* Kalender lavet med inspiration fra https://www.w3schools.com/howto/howto_css_calendar.asp */
+.maaned {
+    padding: 10px 25px;
+    width: 90%;
+    background: #7E1515;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: 'Mate SC', serif;
+}
+
+.maaned ul {
+    margin: 0;
+    padding: 0;
+}
+
+.maaned ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.maaned .forrige {
+    float: left;
+    margin-top: -3px;
+}
+
+.maaned .naeste {
+    float: right;
+    margin-top: -3px;
+}
+
+.dage {
+    background-color: #ddd;
+    font-size: 14px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px 5px;
+}
+
+.dage li {
+    display: inline-block;
+    width: 13%;
+    color: #7E1515;
+    text-align: center;
+}
+
+.dato {
+    background: #eee;
+    margin: 0;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 8px;
+    text-align: left;
+    padding: 10px 5px;
+    line-height: 20px;
+}
+
+.dato li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.5%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #7E1515;
+}
+
+.idag {
+    padding: 5px;
+    background: #7e1515;
+    color: white !important;
+}
+
+.andenmaaned {
+    color: darkgrey !important;
+}
+
+/* ----- PRISER OG BOOKING SLUT ----- */
+
+/* ----- GAVEKORT SIDE STARTER ----- */
+
+#gavekort-baggrund {
+    height: 30vh;
+    background-size: cover;
+    background-image: url(../images/skrivebord.jpg);
+    background-position: center;
+}
+
+.marmorgavekort {
+    background-image: url(../images/marmor.jpg);
+    text-align: center;
+    height: 430px;
+}
+
+.marmorgavekort p {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 14px;
+}
+
+#gaveknap {
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    background: #7e1515;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Mate', serif;
+    border-bottom: 5px solid #b11f25;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#gaveknap:hover {
+    background-color: #b11f25;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* ----- GAVEKORT SIDE SLUTTER ----- */
+
+
+/*-------MOBILE------*/
+@media (max-width: 767px) {
+
+    .detrerum img {
+        padding: 4%;
+    }
+
+    #myBtn,
+    #minknap,
+    #minknap1 {
+        width: 20%;
+        font-size: 12px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .alkymisten {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .enigma {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .oberst {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #hegn {
+        display: none;
+    }
+
+}
+
+/*------TABLET-------*/
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    /*-----FORSIDE-----*/
+
+    #bookingknap a {
+        margin-top: 200px;
+    }
+
+    .landingbox h1 {
+        margin-top: 100px;
+    }
+
+    .landingbox h2 {
+        margin-top: 100px;
+    }
+
+    #testimonial-tekstur {
+        height: 400px;
+    }
+
+    .marmorbox p {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .roedbox {
+        height: 820px;
+    }
+
+    .pris-box {
+        margin-left: 35%;
+        width: 30%;
+    }
+
+    /*-----FORSIDE SLUT-----*/
+
+    /*-----VORES RUM-----*/
+    
+    #marmor-baggrund-rum {
+        height: 1630px;
+    }
+
+    .sub-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .rum-margin {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #alkymistimg {
+        height: 400px;
+    }
+
+    #enigmaimg {
+        height: 400px;
+    }
+    
+    #oberstimg {
+        height: 400px;
+    }
+    
+    .tekstonimg {
+        font-size: 30px;
+    }
+    
+    #myBtn {
+        font-size: 20px;
+        width: 30%;
+    }
+    
+    #minknap1 {
+        font-size: 20px;
+        width: 30%;
+    }
+    
+    #minknap {
+        font-size: 20px;
+        width: 30%;
+    }
+    
+    .modal {
+        margin-top: 70px;
+    }
+    
+    .modal1 {
+        margin-top: 70px;
+    }
+    
+    .modal2 {
+        margin-top: 70px;
+    }
+
+    /*-----VORES RUM SLUT-----*/
+    
+    /*-----TEAMBUILDING-----*/
+    
+    .wrapper-bokse h3 {
+        margin-top: -20px;
+    }
+    
+    .bookingknap-teambuilding {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .fulde-udbytte {
+        height: 550px;
+    }
+    
+    /*-----TEAMBUILDING SLUT-----*/
+    
+    #hegn {
+        display: none;
+    }
+}
+
+/* ----- DESKTOP ----- */
+
+@media (min-width:1025px) {
+
+    p {
+        font-size: 16px;
+    }
+
+    /* ----- HEADER ----- */
+
+    .header-booking {
+        margin-top: 78px;
+        margin-left: 180px;
+        font-size: 12px;
+    }
+
+    .header-tlf {
+        display: none;
+    }
+
+    .header-logo {
+        top: 15px;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+    }
+
+    /* ----- HEADER SLUT ----- */
+
+    /* ----- MENU ----- */
+
+    nav {
+        width: 100%;
+    }
+
+    .nav {
+        height: 130px;
+        line-height: 170px;
+    }
+
+    .menu {
+        display: inline-block;
+        background: none;
+        font-size: 14px;
+        height: 0px;
+
+    }
+
+    .menu a {
+        text-decoration: none;
+        margin: 0px;
+        line-height: 0px;
+        border-bottom: none;
+
+    }
+
+    .burger {
+        display: none;
+
+    }
+
+
+    /* Lavet med inspiration fra https://www.littlesnippets.net/snip1275 */
+    .snip1275 {
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .snip1275 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+
+    .snip1275 li {
+        display: inline-block;
+    }
+
+    .snip1275 a {
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+    }
+
+    .snip1275 a:before,
+    .snip1275 a:after {
+        height: 3px;
+        position: absolute;
+        content: '';
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+        background-color: #7E1515;
+        width: 0;
+    }
+
+    .snip1275 a:before {
+        top: 0;
+        right: 0;
+    }
+
+    .snip1275 a:after {
+        bottom: 0;
+        left: 0;
+    }
+
+    .snip1275 a:hover,
+    .snip1275 .current a {
+        color: #ffffff;
+    }
+
+    .snip1275 a:hover:before,
+    .snip1275 .current a:before,
+    .snip1275 a:hover:after,
+    .snip1275 .current a:after {
+        width: 100%;
+    }
+
+    /*-----FAQ SIDEN STARTER-----*/
+
+    /*******************************
+Modificeret snippet fra CodePen: https://codepen.io/origamid/pen/oeYQpK
+*******************************/
+
+    .container {
+        width: 60%;
+        margin-top: 30px;
+        padding-top: 10px;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+    /*-----FAQ SIDEN SLUTTER-----*/
+
+    .sub-section {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    /* ----- FOOTER ----- */
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 10% 20% 20% 20% 20% 10%;
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .footer-kontakt {
+        grid-column-start: 2;
+    }
+
+    .footer-aabning {
+        grid-column-start: 3;
+    }
+
+    .footer-links {
+        grid-column-start: 4;
+    }
+
+    .footer-follow {
+        grid-column-start: 5;
+    }
+
+    .footer-follow img:hover {
+        opacity: 0.7;
+    }
+
+    /* ----- FOOTER ----- */
+
+    /* ----- FORSIDE ----- */
+    /* ----- HEADER ----- */
+    #bookingknap a {
+        width: 350px;
+        margin-top: 18%;
+        z-index: 2;
+    }
+
+    #bookingknap a:hover {
+        background-color: #b11f25;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+        z-index: 2;
+    }
+
+    /* ----- LANDING IMG ----- */
+    #landing {
+        height: 90vh;
+        background-position: top;
+    }
+
+    .landingbox h1 {
+        top: 40%;
+        font-size: 70px;
+    }
+
+    .landingbox h2 {
+        top: 48%;
+        font-size: 60px;
+    }
+
+    .landingtext h2 {
+        font-size: 55px;
+    }
+
+    /* ----- MARMOR BG ----- */
+
+    .marmorbox h2 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 40px;
+    }
+
+    .marmorgrid {
+        width: 80%;
+        margin-left: 10%;
+        grid-template-columns: auto auto auto auto auto auto;
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+
+    .marmorgrid img {
+        height: 80px;
+    }
+
+    .marmorgrid h3 {
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* ----- RØD TEKSTUR BG MED IKONER ----- */
+
+    .roedbox {
+        height: 550px;
+    }
+
+    .roedbox h2 {
+        font-size: 40px;
+        padding-top: 70px;
+    }
+
+    .roedbox h3 {
+        font-size: 20px;
+    }
+
+    .content-for-alle {
+        display: grid;
+        grid-template-columns: 10% 26.67% 26.67% 26.67% 10%;
+    }
+
+    .familie {
+        grid-column-start: 2;
+    }
+
+    .familie p {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .venner {
+        grid-column-start: 3;
+    }
+
+    .venner p {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .virksomhed {
+        grid-column-start: 4;
+    }
+
+    .virksomhed p {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    /* ----- MARMOR BG MED PRISER PÅ FORSIDE ----- */
+
+    .lilleh3 {
+        font-size: 20px;
+    }
+
+    .pris-box {
+        margin-left: 0;
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    #pris-grid {
+        display: grid;
+        grid-template-columns: 25% 20% 10% 20% 25%;
+    }
+
+    #pris1 {
+        grid-column-start: 2;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #pris2 {
+        grid-column-start: 4;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .pris-dage {
+        font-size: 30px;
+    }
+
+    .pris {
+        font-size: 60px;
+        padding-top: 50px;
+    }
+
+    /* ----- BAGGRUND TIL SPIL PÅ FORSIDE ----- */
+
+    #hegn h2 {
+        padding-top: 40px;
+        font-size: 40px;
+    }
+
+    #hegn {
+        background-size: cover;
+        background-image: url(../images/hegn.jpg);
+        background-position: top;
+        height: 750px;
+        text-align: center;
+    }
+
+    #hegn p {
+        padding-top: 30px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /*-----SPILLET DESKTOP-----*/
+
+    .startspilimg {
+        width: 40%;
+        margin-top: 50px;
+    }
+
+    .spil-knap {
+        margin-top: 15%;
+    }
+
+    /*SPILLET SLUTTER----*/
+
+    /* ----- TESTIMONIALS ----- */
+
+    .main-gallery {
+        height: 330px;
+    }
+
+    .testimonial {
+        margin: 30px 25% 50px 25%;
+    }
+
+    .flickity-page-dots {
+        top: 170px;
+    }
+
+    .stars {
+        padding-top: 40px;
+    }
+
+
+    #tripadvisor {
+        width: 15%;
+        margin-left: 42.5%;
+        padding-top: 20px;
+    }
+
+    /* ----- TESTIMONIALS SLUTTER ----- */
+
+    /* ----- FORSIDE SLUTTER ----- */
+
+
+    /*---RUMMENE STARTER DESKTOP---*/
+
+    #marmor-baggrund-rum {
+        height: 800px;
+    }
+
+    #voresrum-header {
+        height: 60vh;
+    }
+
+    .voresrum-h1 {
+        text-align: center;
+        padding: 2%;
+        font-size: 300%;
+    }
+
+    .voresrum p {
+
+        margin: 0% 15% 0% 15%;
+        padding-bottom: 2%;
+    }
+
+    .detrerum {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .rum-margin {
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+
+    .tekstonimg1 {
+        /*ikonerne*/
+        width: 30%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .modal-content,
+    .modal-indhold1,
+    .modal-indhold {
+
+        width: 60%;
+        margin-top: 0%;
+    }
+
+    .content-billede {
+        width: 50%;
+        margin-left: 25%;
+
+    }
+
+    .detrerum img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #oberstimg {
+        width: 299px;
+        height: 411px;
+        cursor: pointer;
+
+    }
+
+    #enigmaimg {
+        width: 299px;
+        height: 411px;
+        cursor: pointer;
+    }
+
+    #alkymistimg {
+        width: 299px;
+        height: 411px;
+        cursor: pointer;
+    }
+
+    /*billede inde i modal box*/
+
+    #alkymist2,
+    #oberst2,
+    #enigma2 {
+        width: 80%;
+        height: 250px;
+    }
+
+    .booknu-rum {
+        width: 20%;
+    }
+
+    /*---RUMMENE SLUTTER--*/
+
+
+
+    /* ---------TEAMBUILDING DESKTOP START ----- */
+
+    /* Headerbillede på teambuilding-siden */
+
+    .teambuilding-header {
+        height: 60vh;
+    }
+
+
+    /* DE TO BOKSE, FORDELE OG PRAKTISK INFO -- på TEAMBUILDING-SIDEN */
+
+    .wrapper-bokse {
+        line-height: 150%;
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        margin-bottom: 20px;
+    }
+
+    #fordele {
+        display: inline-block;
+        width: 100%;
+        padding: 1% 2% 2% 2%;
+        height: 200px;
+        margin-left: 0px;
+        grid-column-start: 1;
+    }
+
+    #praktisk-info {
+        display: inline-block;
+        width: 100%;
+        padding: 1% 2% 2% 2%;
+        height: 200px;
+        grid-column-start: 3;
+    }
+
+    .teambuilding-h2 {
+        font-size: 200%;
+    }
+
+    .bookingknap-teambuilding p {
+        width: 40%;
+
+    }
+
+    #kontakt-knap p {
+        width: 20%;
+    }
+
+    .teambuilding-tekstafsnit {
+        padding: 0% 15% 0% 15%;
+    }
+
+    .fulde-udbytte h2 {
+        font-size: 25px;
+    }
+
+
+    /* ---------TEAMBUILDING DESKTOP SLUT ----- */
+
+    /* --------- KONTAKT-SIDEN DESKTOP START ----------*/
+
+
+    #kontakt-header {
+        background-position: top;
+        height: 60vh;
+    }
+
+    #kontakt-tekst {
+        margin: 0% 15% 0% 15%;
+
+    }
+
+
+    /* --------- KONTAKT-SIDEN DESKTOP SLUT ----------*/
+
+    /* ----- PRISER OG BOOKING STARTER ----- */
+
+    #booking-baggrund {
+        height: 60vh;
+    }
+
+    .dropdown {
+        margin-top: 100px;
+    }
+
+    .dropbtn p {
+        margin-top: 0px;
+    }
+
+    .maaned {
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .dage li {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .dage {
+        width: 30%;
+        margin-left: 35%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+    }
+
+    .ma {
+        grid-column-start: 1;
+    }
+
+    .ti {
+        grid-column-start: 2;
+    }
+
+    .on {
+        grid-column-start: 3;
+    }
+
+    .to {
+        grid-column-start: 4;
+    }
+
+    .fr {
+        grid-column-start: 5;
+    }
+
+    .lo {
+        grid-column-start: 6;
+    }
+
+    .so {
+        grid-column-start: 7;
+    }
+
+    .dato {
+        width: 30%;
+        margin-left: 35%;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .dato li {
+        font-size: 16px;
+    }
+
+    /* ----- PRISER OG BOOKING SLUTTER ----- */
+
+    /* ----- GAVEKORT SIDE STARTER ----- */
+
+    #gavekort-baggrund {
+        height: 60vh;
+    }
+
+    /* ----- GAVEKORT SIDE SLUTTER ----- */
+
+    #faq-header {
+        height: 60vh;
+    }
+}

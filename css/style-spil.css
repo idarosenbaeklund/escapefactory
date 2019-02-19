@@ -1,0 +1,195 @@
+/*GLOBAL*/
+
+body {
+    width: 100%;
+    margin: 0%;
+}
+
+/* ----- Fonte ----- */
+
+h1,
+h2 {
+    font-family: 'Mate SC', serif;
+    color: #7E1515;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Mate', serif;
+    color: #fff;
+}
+
+.startside-bg p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    color: #fff;
+    padding-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*-----SPILLET---styling af baggrundsbilleder*/
+
+.baggrund-spil {
+    /*index-første side*/
+    background-size: cover;
+    background-image: url(../images/startspil-img.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.baggrund1-spil {
+    /*gaaden*/
+    background-image: url(../images/gaaden-rum-spil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.baggrund3-spil {
+    /*rum1*/
+    background-image: url(../images/rum1-spil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.baggrund4-spil {
+    /*rum2*/
+    background-image: url(../images/rum2-spil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.baggrund5-spil {
+    /*rum3*/
+    background-image: url(../images/rum3-spil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.baggrund6-spil {
+    /*hængelås*/
+    background-image: url(../images/hangelaas-rum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#demo {
+    position: absolute;
+    font-size: 20px;
+    background: #7c2000;
+    font-family: mate sc;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*pile der er på alle sider, i højre og venstre side
+container styler også knappen med før mig til hængelåsen*/
+
+.pilhojre {
+    position: absolute;
+    width: 33px;
+    top: 50%;
+    right: 0%;
+}
+
+.pilvenstre {
+    width: 33px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+/*styling af jeg har knækket koden-knap*/
+
+.knaekketkoden {
+    background: #7E1515;
+    border: none;
+    padding: 1% 2%;
+    font-size: 15px;
+    font-family: mate sc;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    color: white;
+}
+
+.knaekketkoden:hover {
+    opacity: 0.9;
+}
+
+
+/*styling af forsiden, hvor man sætter spillet igang*/
+
+.startspil {
+    background: #7E1515;
+    border: none;
+    padding: 1% 5%;
+    font-size: 20px;
+    font-family: 'Mate SC', serif;
+    position: absolute;
+    margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+}
+
+.startspil:hover {
+    opacity: 0.8;
+}
+
+.startside-bg {
+    z-index: 1;
+    width: 80%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/*styling af gaade siden*/
+
+#fjernsynet {
+    width: 25%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+
+}
+
+/*styling af rum 2*/
+
+.stikkontakt {
+
+    width: 5%;
+
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+
+/*styling af hængelåsrum */
+
+.padlock {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

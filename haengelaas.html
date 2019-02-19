@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Factory | Spil</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style-spil.css">
+    <link href="https://fonts.googleapis.com/css?family=Mate|Mate+SC|Merriweather+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="baggrund6-spil">
+        <a href="rum-3.html"><img class="pilvenstre" src="images/pil-venstre.png" alt="pil der peger til venstre"></a>
+        <img class="padlock" src="images/padlock.png" alt="hængelås" onclick="myFunction()">
+        <!--demo er det tekst der kommer til at stå, efter at have indtastet koden. Det her p-tag bruges til styling af teksten-->
+        <p id="demo"></p>
+    </div>
+
+    <!--inspiration fra: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_switch4-->
+
+    <script id="promt">
+        function myFunction() {
+            var text;
+            var koden = prompt("Hvad mener du koden er?");
+            switch (koden) {
+                case "7597":
+                    text = "DU GJORDE DET! Du knækkede koden, godt gået! Husk på, dette er bare en lille forsmag på, hvad Escape Factory tilbyder";
+                    break
+                default:
+                    text = "Desværre, du må prøve igen";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+
+    </script>
+
+</body>
+
+</html>
